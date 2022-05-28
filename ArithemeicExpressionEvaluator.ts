@@ -5,14 +5,12 @@ export class ArithmeticExpressionEvaluator {
     ch!: string;
 
     evaluate(expression: string): number {
-        console.log(expression)
         return this.evaluateAll(expression, false);
     }
 
     evaluateAll(expression: string, resultIsInteger: boolean): number {
         this.str = expression;
         this.pos = -1;
-        console.log(this.str)
         const outcome = this.parse();
         if (resultIsInteger) {
             return Math.round(outcome);
