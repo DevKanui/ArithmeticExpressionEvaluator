@@ -1,16 +1,18 @@
 export class ArithmeticExpressionEvaluator {
     static INVALID_NUMBER = -1234567.654;
-    str: string;
+    str!: string;
     pos = -1;
-    ch: string;
+    ch!: string;
 
     evaluate(expression: string): number {
+        console.log(expression)
         return this.evaluateAll(expression, false);
     }
 
     evaluateAll(expression: string, resultIsInteger: boolean): number {
         this.str = expression;
         this.pos = -1;
+        console.log(this.str)
         const outcome = this.parse();
         if (resultIsInteger) {
             return Math.round(outcome);
@@ -19,7 +21,7 @@ export class ArithmeticExpressionEvaluator {
     }
 
     nextChar() {
-        this.ch = (++this.pos < this.str.length) ? this.str.charAt(this.pos) : '';
+        this.ch = (++this.pos < this.str.length) ? this.str.charAt(this.pos) : "\0";
     }
 
     eat(charToEat: string): boolean {
