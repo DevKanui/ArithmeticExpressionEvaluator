@@ -121,4 +121,4 @@ class ArithmeticExpressionEvaluator {
     }
 }
 
-exports.default = ArithmeticExpressionEvaluator
+exports.ArithmeticExpressionEvaluator = ArithmeticExpressionEvaluator

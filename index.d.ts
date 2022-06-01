@@ -1,3 +1,3 @@
-import ArithmeticExpressionEvaluator from './ArithmeticExpressionEvaluator';
+import {ArithmeticExpressionEvaluator} from './ArithmeticExpressionEvaluator';
 export * from './ArithmeticExpressionEvaluator';
 export default ArithmeticExpressionEvaluator
