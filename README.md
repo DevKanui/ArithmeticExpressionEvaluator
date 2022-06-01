@@ -1,5 +1,25 @@
 # ArithmeticExpressionEvaluator
-How to use it? In Angular, you can access it via dependency injection. Otherwise you can create an object. You can specify via a boolean (here 'true') to get the result as an integer.
+How to use it? 
+In Angular, you can access it via dependency injection. Otherwise you can create an object. You can specify via a boolean (here 'true') to get the result as an integer.
+
+Setup and Installation:
+First do:
+```sk
+npm i artihemeicexpressionevaluator
+```
+
+Then import it:
+```
+import { ArithmeticExpressionEvaluator } from "artihemeicexpressionevaluator";
+```
+
+now create an object:
+```
+let arithmeticExpressionEvaluator: ArithmeticExpressionEvaluator;
+arithmeticExpressionEvaluator = new ArithmeticExpressionEvaluator();
+```
+
+All done! Now you can use and Test it with following code
 
 ```
 arithmeticExpressionEvaluator.evaluate('10 + 2 * 6')   // shows 22.0
@@ -8,7 +28,7 @@ arithmeticExpressionEvaluator.evaluate('10 + 2 * 6', true)   // shows 22 (intege
 
 The Karma test code is:
 ```
-import {ArithmeticExpressionEvaluator} from './arithmetic-expression-evaluator.service';
+import { ArithmeticExpressionEvaluator } from "artihemeicexpressionevaluator";
 
 describe('Arithmetic Expression Evaluation', () => {
     let arithmeticExpressionEvaluator: ArithmeticExpressionEvaluator;
