@@ -1,0 +1,25 @@
+{
+  "name": "artihemeicexpressionevaluator",
+  "version": "1.0.0",
+  "description": "Evaluate String expressions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevKanui/ArithmeticExpressionEvaluator.git"
+  },
+  "keywords": [
+    "Math",
+    "calculator",
+    "typescript",
+    "string-calculator"
+  ],
+  "author": "DevKanui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevKanui/ArithmeticExpressionEvaluator/issues"
+  },
+  "homepage": "https://github.com/DevKanui/ArithmeticExpressionEvaluator#readme"
+}
